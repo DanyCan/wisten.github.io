@@ -12,9 +12,9 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
+	public $host = '52.24.75.26';
 	public $user = 'root';
-	public $password = '';
+	public $password = 'skynet';
 	public $db = 'unity-seguros';
 	public $dbprefix = 'kqm56_';
 	public $live_site = '';
