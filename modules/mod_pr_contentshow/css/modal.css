@@ -1,0 +1,311 @@
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.modal-dialog {
+  position: relative;
+  z-index: 1050;
+  width: auto;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: #000000;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.modal-header {
+  min-height: 16.428571429px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header .close {
+  margin-top: -2px;
+}
+
+.modal-title {
+  margin: 0;
+  line-height: 1.428571429;
+}
+
+.modal-body {
+  position: relative;
+  padding: 20px;
+}
+
+.modal-footer {
+  padding: 19px 20px 20px;
+  margin-top: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  content: " ";
+}
+
+.modal-footer:after {
+  clear: both;
+}
+
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  content: " ";
+}
+
+.modal-footer:after {
+  clear: both;
+}
+
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+
+
+
+
+
+
+/*******************
+Reversal Our Team Start
+******************************/	
+
+	.section-our-team .our-team{
+		margin-top: 60px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-left: 1px solid #ebebeb;
+		border-bottom: 1px solid #ebebeb;
+		border-top: 1px solid #ebebeb;
+	}	
+	.section-our-team .bdr{		
+		border-right: 1px solid #ebebeb;
+	}
+	
+/*******************
+Reversal Our Team End
+******************************/
+
+
+/*******************
+Reversal Our Team Single Start
+******************************/
+	.modal-dialog{
+		width: 100%;
+	}
+
+	button.close{
+		position: relative;
+		top: 8px;
+		right: 8px;
+	}
+	.section-our-team-single {
+		padding-top: 80px;		
+	}			
+	.section-our-team-single .our-team h4{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 48px;
+		color: #333333;		
+	}	
+	.section-our-team-single .our-team p.text5{		 
+		color: #fff;
+		font-size: 30px;
+		font-family: Lato;
+		margin-top: 15px;
+		line-height: 20px;
+		font-weight: normal;
+	}	
+	.section-our-team-single .our-team .single-second{			
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.section-our-team-single .single-details h2{		 
+		font-family: Code;
+		font-weight: bold;
+		text-transform: uppercase;		
+		font-size: 24px;
+		margin-top: 0px;
+		color:#333;
+	}	
+	.blank1{
+		height:30px;
+	}	
+	.section-our-team-single .single-details p.single1{		 
+		font-family: Lato;
+		font-weight: bold;
+		font-size: 15px;
+		color: #666666;
+		line-height: 20px;
+	}	
+	.section-our-team-single .single-details p.single2{		 
+		font-family: Lato;
+		font-style: normal;
+		font-size: 13px;
+		color: #999999;
+		line-height: 20px;
+	}
+	
+	.section-our-team-single .social-icon ul li:hover{
+		display: inline-block;
+		float: left;
+		width: 100px;
+		
+		background-repeat: no-repeat;
+		background-position: 11px 0px;
+		height: 90px;
+	}
+	.section-our-team-single .social-icon {
+		text-align: center;
+		
+		margin: 0 auto;
+		margin-top: 45px;
+		position: relative;
+		left: -85px;
+		top: -25px;
+	}		
+	.section-our-team-single .second-part{
+		position: relative;
+		top: -90px;
+	}	
+	.pie1 {
+		text-align: center;
+		font-size: 20px;
+		position: relative;
+		margin: 0 auto 30px;
+		margin-top: 70px;
+		color: #999999;
+	}
+	.easyPieChart1 {
+		position: relative;
+		text-align: center;
+		top: -60px;
+		left: -5px;
+	}
+	.single-pie1{
+		width:25%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.single-pie1 .percent {
+position: absolute;
+width: 100%;
+line-height: 150px;
+left:0px;
+}
+	.single-pie1 h4{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;
+		color: #333333;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+	.easyPieChart1 canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+/*******************
+Reversal Our Team Single End
+******************************/

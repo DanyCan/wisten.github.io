@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.1" method="upgrade">
+	<name>mod_pr_progressbar</name>
+	<creationDate>07/07/2013</creationDate>
+	<author>Mehir Mondal</author>
+	<authorEmail>webpentagon@pranon.com</authorEmail>
+	<authorUrl>http://www.webpentagon.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>0.1</version>
+	<description>MOD_PR_PROGRESSBAR_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_pr_progressbar">mod_pr_progressbar.php</filename>
+		<filename>mod_pr_progressbar.xml</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+		<config>
+		
+		<fields name="params">
+		    <fieldset name="basic">
+				 <field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESCRIPTION"/>
+		</fieldset>
+			
+			<fieldset name="style" label="Select Style">
+				<field name="choose_style" type="list" default="style_1"
+					label="choose style" description="choose a style">
+					<option value="style_1">Style 1</option>
+					<option value="style_2">Style 2</option>
+					
+				</field>
+			</fieldset>
+			
+			<fieldset name="desc" label="Description">
+		        <field name="desc" type="text" label="Title" description="" />
+		        <field name="intro" type="text" label="Description" description="" />
+			</fieldset>
+			
+			<fieldset name="capability1" label="Capability 1">
+				<field name="ct1" type="text" label="Title" description="Add Title"/>
+				<field name="pv1" type="text" label="Capability" description="Add Value"/>
+				<field name="c1" type="color" label="Color" description="Add color code as color code"/>
+				
+			</fieldset>
+			
+			<fieldset name="capability2" label="Capability 2">
+				<field name="ct2" type="text" label="Title" description="Add Title"/>
+				<field name="pv2" type="text" label="Capability" description="Add Value"/>
+				<field name="c2" type="color" label="Color" description="Add color code as color code"/>
+			</fieldset>
+			
+			<fieldset name="capability3" label="Capability 3">
+				<field name="ct3" type="text" label="Title" description="Add Title"/>
+				<field name="pv3" type="text" label="Capability" description="Add Value"/>
+				<field name="c3" type="color" label="Color" description="Add color code as color code"/>				
+			</fieldset>
+			
+			<fieldset name="capability4" label="Capability 4">
+				<field name="ct4" type="text" label="Title" description="Add Title"/>
+				<field name="pv4" type="text" label="Capability" description="Add Value"/>
+				<field name="c4" type="color" label="Color" description="Add color code as color code"/>				
+			</fieldset>
+			
+			<fieldset name="capability5" label="Capability 5">
+				<field name="ct5" type="text" label="Title" description="Add Title"/>
+				<field name="pv5" type="text" label="Capability" description="Add Value"/>
+				<field name="c5" type="color" label="Color" description="Add color code as color code"/>				
+			</fieldset>
+			
+			<fieldset name="capability6" label="Capability 6">
+				<field name="ct6" type="text" label="Title" description="Add Title"/>
+				<field name="pv6" type="text" label="Capability" description="Add Value"/>
+				<field name="c6" type="color" label="Color" description="Add color code as color code"/>				
+			</fieldset>
+			
+			<fieldset name="capability7" label="Capability 7">
+				<field name="ct7" type="text" label="Title" description="Add Title"/>
+				<field name="pv7" type="text" label="Capability" description="Add Value"/>
+				<field name="c7" type="color" label="Color" description="Add color code as color code"/>				
+			</fieldset>
+			
+			<fieldset name="capability8" label="Capability 8">
+				<field name="ct8" type="text" label="Title" description="Add Title"/>
+				<field name="pv8" type="text" label="Capability" description="Add Value"/>
+				<field name="c8" type="color" label="Color" description="Add color code as color code"/>			
+			</fieldset>
+			
+			<fieldset name="capability9" label="Capability 9">
+				<field name="ct9" type="text" label="Title" description="Add Title"/>
+				<field name="pv9" type="text" label="Capability" description="Add Value"/>
+				<field name="c9" type="color" label="Color" description="Add color code as color code"/>				
+			</fieldset>
+			
+			<fieldset name="capability10" label="Capability 10">
+				<field name="ct10" type="text" label="Title" description="Add Title"/>
+				<field name="pv10" type="text" label="Capability" description="Add Value"/>
+				<field name="c10" type="color" label="Color" description="Add color code as color code"/>		
+			</fieldset>
+			
+			
+			
+				
+			
+
+		</fields>
+	</config>
+</extension>

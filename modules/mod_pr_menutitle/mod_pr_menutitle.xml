@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+	<name>mod_pr_menutitle</name>
+	<creationDate>20-03-2014</creationDate>
+	<author>Kamrul Hossain Rono</author>
+	<authorEmail>webpentagon@pranon.com</authorEmail>
+	<authorUrl>http://www.webpentagon.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>0.1</version>
+	<description>mod_pr_menutitle_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_pr_menutitle">mod_pr_menutitle.php</filename>
+		<filename>mod_pr_menutitle.xml</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		
+	</files>
+		<config>
+		<fields name="params">
+			<fieldset name="basic">
+			    <field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESCRIPTION"/>
+				
+			</fieldset>
+				
+		</fields>
+	</config>
+</extension>

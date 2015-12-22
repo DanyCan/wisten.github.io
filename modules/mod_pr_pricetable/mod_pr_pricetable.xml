@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+	<name>mod_pr_pricetable</name>
+	<creationDate>07/04/2012</creationDate>
+	<author>Pranon</author>
+	<authorEmail>cto@pranon.com</authorEmail>
+	<authorUrl>http://www.pranon.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>0.1</version>
+	<description>MOD_PR_PRICETABLE_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_pr_pricetable">mod_pr_pricetable.php</filename>
+		<filename>mod_pr_pricetable.xml</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+		<config>
+		<fields name="params" addfieldpath="/modules/mod_pr_pricetable/elements">
+		<fieldset name="basic">
+				 <field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESCRIPTION"/>
+		</fieldset>
+	
+		
+		<!-- column 1 backend input -->
+		<fieldset name="header" label="Header Description">
+		        <field name="title" type="text" label="Title" description=""/>
+		        <field name="desc" type="text" label="Description" description="" />
+		</fieldset>
+		<fieldset name="mod_col_width" label="Module Column">
+		        <field name="col_width" type="list" default="23%" label="Column">
+					<option value="100%">1 Column</option>
+					<option value="48.7%">2 Column</option>
+					<option value="31.5%">3 Column</option>
+					<option value="23%">4 Column</option>
+				</field>
+		        
+		</fieldset>
+		<fieldset name="column_1" label="Detail column-1">
+				<field name="header_text1" type="text" label="Header Text" description="" />
+				<field name="price_int_1" type="text" label="Price Integer" description="" />
+				<field name="price_deci_1" type="text" label="Price Decimal" description="" />
+				<field name="period1" type="text" label="Period" description="" />
+				<field name="col_1_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_1_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_1_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_1_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_1_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_1_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_1_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_1_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_1_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_1_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_1_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_1_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_1_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_1_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+
+<!-- column 2 backend input -->
+		<fieldset name="column_2" label="Detail column-2">
+				<field name="header_text2" type="text" label="Header Text" description="" />
+				<field name="price_int_2" type="text" label="Price Integer" description="" />
+				<field name="price_deci_2" type="text" label="Price Decimal" description="" />
+				<field name="period2" type="text" label="Period" description="" />
+				<field name="col_2_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_2_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_2_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_2_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_2_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_2_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_2_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_2_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_2_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_2_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_2_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_2_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_2_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_2_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+
+<!-- column 3 backend input -->
+		<fieldset name="column_3" label="Detail column-3">
+				<field name="header_text3" type="text" label="Header Text" description="" />
+				<field name="price_int_3" type="text" label="Price Integer" description="" />
+				<field name="price_deci_3" type="text" label="Price Decimal" description="" />
+				<field name="period3" type="text" label="Period" description="" />
+				<field name="col_3_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_3_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_3_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_3_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_3_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_3_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_3_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_3_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_3_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_3_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_3_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_3_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_3_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_3_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+		
+		<!-- column 4 backend input -->
+		<fieldset name="column_4" label="Detail column-4">
+				<field name="header_text4" type="text" label="Header Text" description="" />
+				<field name="price_int_4" type="text" label="Price Integer" description="" />
+				<field name="price_deci_4" type="text" label="Price Decimal" description="" />
+				<field name="period4" type="text" label="Period" description="" />
+				<field name="col_4_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_4_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_4_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_4_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_4_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_4_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_4_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_4_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_4_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_4_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_4_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_4_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_4_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_4_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+		
+		
+		<!-- column 5 backend input -->
+		<fieldset name="column_5" label="Detail column-5">
+				<field name="header_text5" type="text" label="Header Text" description="" />
+				<field name="price_int_5" type="text" label="Price Integer" description="" />
+				<field name="price_deci_5" type="text" label="Price Decimal" description="" />
+				<field name="period5" type="text" label="Period" description="" />
+				<field name="col_5_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_5_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_5_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_5_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_5_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_5_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_5_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_5_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_5_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_5_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_5_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_5_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_5_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_5_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+		
+		<!-- column 6 backend input -->
+		<fieldset name="column_6" label="Detail column-6">
+				<field name="header_text6" type="text" label="Header Text" description="" />
+				<field name="price_int_6" type="text" label="Price Integer" description="" />
+				<field name="price_deci_6" type="text" label="Price Decimal" description="" />
+				<field name="period6" type="text" label="Period" description="" />
+				<field name="col_6_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_6_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_6_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_6_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_6_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_6_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_6_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_6_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_6_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_6_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_6_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_6_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_6_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_6_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+		
+		<!-- column 7 backend input -->
+		<fieldset name="column_7" label="Detail column-7">
+				<field name="header_text7" type="text" label="Header Text" description="" />
+				<field name="price_int_7" type="text" label="Price Integer" description="" />
+				<field name="price_deci_7" type="text" label="Price Decimal" description="" />
+				<field name="period7" type="text" label="Period" description="" />
+				<field name="col_7_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_7_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_7_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_7_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_7_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_7_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_7_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_7_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_7_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_7_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_7_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_7_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_7_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_7_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+		
+		<!-- column 8 backend input -->
+		<fieldset name="column_8" label="Detail column-8">
+				<field name="header_text8" type="text" label="Header Text" description="" />
+				<field name="price_int_8" type="text" label="Price Integer" description="" />
+				<field name="price_deci_8" type="text" label="Price Decimal" description="" />
+				<field name="period8" type="text" label="Period" description="" />
+				<field name="col_8_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_8_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_8_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_8_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_8_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_8_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_8_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_8_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_8_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_8_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_8_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_8_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_8_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_8_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+		
+		<!-- column 9 backend input -->
+		<fieldset name="column_9" label="Detail column-9">
+				<field name="header_text9" type="text" label="Header Text" description="" />
+				<field name="price_int_9" type="text" label="Price Integer" description="" />
+				<field name="price_deci_9" type="text" label="Price Decimal" description="" />
+				<field name="period9" type="text" label="Period" description="" />
+				<field name="col_9_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_9_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_9_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_9_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_9_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_9_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_9_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_9_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_9_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_9_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_9_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_9_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_9_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_9_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+		
+		<!-- column 10 backend input -->
+		<fieldset name="column_10" label="Detail column-10">
+				<field name="header_text10" type="text" label="Header Text" description="" />
+				<field name="price_int_10" type="text" label="Price Integer" description="" />
+				<field name="price_deci_10" type="text" label="Price Decimal" description="" />
+				<field name="period10" type="text" label="Period" description="" />
+				<field name="col_10_row_1_text" type="text" label="Row 1 Text" description="" />
+				<field name="col_10_row_1_text1" type="text" label="Row 1 Text2" description="" />
+				
+				<field name="col_10_row_2_text" type="text" label="Row 2 Text" description="" />
+				<field name="col_10_row_2_text1" type="text" label="Row 2 Text2" description="" />
+				
+				<field name="col_10_row_3_text" type="text" label="Row 3 Text" description="" />
+				<field name="col_10_row_3_text1" type="text" label="Row 3 Text2" description="" />
+				
+				<field name="col_10_row_4_text" type="text" label="Row 4 Text" description="" />
+				<field name="col_10_row_4_text1" type="text" label="Row 4 Text2" description="" />
+				
+				<field name="col_10_row_5_text" type="text" label="Row 5 Text" description="" />
+				<field name="col_10_row_5_text1" type="text" label="Row 5 Text2" description="" />
+				
+				<field name="col_10_row_6_text" type="text" label="Row 6 Text" description="" />
+				<field name="col_10_row_6_text1" type="text" label="Row 6 Text2" description="" />
+				
+				<field name="col_10_row_7_text" type="text" label="Button Text" description="" />
+				
+				<field name="col_10_row_8_text" type="url" label="Order Link" description="" default="#" />
+		</fieldset>
+
+
+		
+		
+		</fields>
+	</config>
+</extension>

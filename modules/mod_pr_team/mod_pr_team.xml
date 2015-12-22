@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.1" method="upgrade">
+	<name>mod_pr_team</name>
+	<creationDate>08/12/2013</creationDate>
+	<author>Mehir Mondal</author>
+	<authorEmail>webpentagon@pranon.com</authorEmail>
+	<authorUrl>http://www.webpentagon.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>1.0</version>
+	<description>MOD_PR_TEAM_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_pr_team">mod_pr_team.php</filename>
+		<filename>mod_pr_team.xml</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+		<config>
+		<fields name="params">
+			
+			<fieldset name="header" label="Header Description">
+				<field name="head" type="editor" label="Type Code/Text"  description="Type Code/Text" width="400" height="auto" filter="safehtml" />
+			</fieldset>
+			
+			<fieldset name="teammember1" label="Team Member1">
+				<field name="tm1" type="media" label="Image"  description="Choose an image." />
+				<field name="mn1" type="text" label="Name" description="Add Text"/>
+				<field name="tt1" type="text" label="Designation" description="Add Text"/>
+				<field name="td1" type="text" label="Description" description="Add text"/>
+				
+				<field name="facebook1" type="url" default="" label="Facebook" description="Facebook username"/>		
+				<field name="twitter1" type="url" default="" label="Twitter" description="Twitter username"/>		
+                <field name="googleplus1" type="url" default="" label="Googleplus" description="Googleplus username"/>
+				<field name="dribbble1" type="url" default="" label="dribbble" description="dribbble username"/>		
+				<field name="linkedin1" type="url" default="" label="Linkedin" description="Linkedin username"/>		
+				<field name="pinterest1" type="url" default="" label="Pinterest" description="Pinterest username"/>		
+				
+			</fieldset>
+			
+			<fieldset name="teammember2" label="Team Member2">
+				<field name="tm2" type="media" label="Image"  description="Choose an image." />
+				<field name="mn2" type="text" label="Name" description="Add Text"/>
+				<field name="tt2" type="text" label="Designation" description="Add Text"/>
+				<field name="td2" type="text" label="Description" description="Add text"/>
+				
+				<field name="facebook2" type="url" default="" label="Facebook" description="Facebook username"/>		
+				<field name="twitter2" type="url" default="" label="Twitter" description="Twitter username"/>		
+                <field name="googleplus2" type="url" default="" label="Googleplus" description="Googleplus username"/>
+				<field name="dribbble2" type="url" default="" label="dribbble" description="dribbble username"/>		
+				<field name="linkedin2" type="url" default="" label="Linkedin" description="Linkedin username"/>		
+				<field name="pinterest2" type="url" default="" label="Pinterest" description="Pinterest username"/>		
+				</fieldset>
+			
+			<fieldset name="teammember3" label="Team Member3">
+				<field name="tm3" type="media" label="Image"  description="Choose an image." />
+				<field name="mn3" type="text" label="Name" description="Add Text"/>
+				<field name="tt3" type="text" label="Designation" description="Add Text"/>
+				<field name="td3" type="text" label="Description" description="Add text"/>
+				
+				<field name="facebook3" type="url" default="" label="Facebook" description="Facebook username"/>		
+				<field name="twitter3" type="url" default="" label="Twitter" description="Twitter username"/>		
+                <field name="googleplus3" type="url" default="" label="Googleplus" description="Googleplus username"/>
+				<field name="dribbble3" type="url" default="" label="dribbble" description="dribbble username"/>		
+				<field name="linkedin3" type="url" default="" label="Linkedin" description="Linkedin username"/>		
+				<field name="pinterest3" type="url" default="" label="Pinterest" description="Pinterest username"/>		
+				</fieldset>
+			
+			<fieldset name="teammember4" label="Team Member4">
+				<field name="tm4" type="media" label="Image"  description="Choose an image." />
+				<field name="mn4" type="text" label="Name" description="Add Text"/>
+				<field name="tt4" type="text" label="Designation" description="Add Text"/>
+				<field name="td4" type="text" label="Description" description="Add text"/>
+				
+				<field name="facebook4" type="url" default="" label="Facebook" description="Facebook username"/>		
+				<field name="twitter4" type="url" default="" label="Twitter" description="Twitter username"/>		
+                <field name="googleplus4" type="url" default="" label="Googleplus" description="Googleplus username"/>
+				<field name="dribbble4" type="url" default="" label="dribbble" description="dribbble username"/>		
+				<field name="linkedin4" type="url" default="" label="Linkedin" description="Linkedin username"/>		
+				<field name="pinterest4" type="url" default="" label="Pinterest" description="Pinterest username"/>		
+				</fieldset>
+			
+			<fieldset name="teammember5" label="Team Member5">
+				<field name="tm5" type="media" label="Image"  description="Choose an image." />
+				<field name="mn5" type="text" label="Name" description="Add Text"/>
+				<field name="tt5" type="text" label="Designation" description="Add Text"/>
+				<field name="td5" type="text" label="Description" description="Add text"/>
+				
+				<field name="facebook5" type="url" default="" label="Facebook" description="Facebook username"/>		
+				<field name="twitter5" type="url" default="" label="Twitter" description="Twitter username"/>		
+                <field name="googleplus5" type="url" default="" label="Googleplus" description="Googleplus username"/>
+				<field name="dribbble5" type="url" default="" label="dribbble" description="dribbble username"/>		
+				<field name="linkedin5" type="url" default="" label="Linkedin" description="Linkedin username"/>		
+				<field name="pinterest5" type="url" default="" label="Pinterest" description="Pinterest username"/>		
+				</fieldset>
+			
+			<fieldset name="teammember6" label="Team Member6">
+				<field name="tm6" type="media" label="Image"  description="Choose an image." />
+				<field name="mn6" type="text" label="Name" description="Add Text"/>
+				<field name="tt6" type="text" label="Designation" description="Add Text"/>
+				<field name="td6" type="text" label="Description" description="Add text"/>
+				
+				<field name="facebook6" type="url" default="" label="Facebook" description="Facebook username"/>		
+				<field name="twitter6" type="url" default="" label="Twitter" description="Twitter username"/>		
+                <field name="googleplus6" type="url" default="" label="Googleplus" description="Googleplus username"/>
+				<field name="dribbble6" type="url" default="" label="dribbble" description="dribbble username"/>		
+				<field name="linkedin6" type="url" default="" label="Linkedin" description="Linkedin username"/>		
+				<field name="pinterest6" type="url" default="" label="Pinterest" description="Pinterest username"/>		
+				</fieldset>
+			
+			
+
+			
+		</fields>
+	</config>
+</extension>

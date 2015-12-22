@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" method="upgrade">
+	<name>PR Accordion</name>
+	<creationDate>24/08/2014</creationDate>
+	<author>Mehir Mondal</author>
+	<authorEmail>mehir.mondal@gmail.com</authorEmail>
+	<authorUrl>http://www.webpentagon.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>0.1</version>
+	<description>PR Accordion Module for joomla 3.2.X</description>
+	<files>
+		<filename module="mod_pr_accordion">mod_pr_accordion.php</filename>
+		<filename>mod_pr_accordion.xml</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_pr_accordion.ini</language>
+		<language tag="en-GB">language/en-GB.mod_pr_accordion.sys.ini</language>
+	</languages>
+		<config>
+		
+		<fields name="params">
+		
+			<fieldset name="headline" label="Section Title">		
+				<field name="heading" type="text" label="Section Title" description="Add Section Title"/>
+			</fieldset>
+			
+			
+			<fieldset name="bgimg" label="Background Image">	
+				<field name="sl_image" label="Image 1" type="media"  description="Choose an image." />
+			</fieldset>
+				
+			<fieldset name="accordion1" label="Accordion 1">		
+				<field name="sl_text1" type="text" label="Tab Title" description="Add Title"/>
+				<field name="sl_text2" type="text" label="Tab Content" description="Add Title"/>
+			</fieldset>
+			
+			<fieldset name="accordion2" label="Accordion 2">		
+				<field name="sl_text3" type="text" label="Tab Title" description="Add Title"/>
+				<field name="sl_text4" type="text" label="Tab Content" description="Add Title"/>
+			</fieldset>
+			
+			<fieldset name="accordion3" label="Accordion 3">		
+				<field name="sl_text5" type="text" label="Tab Title" description="Add Title"/>
+				<field name="sl_text6" type="text" label="Tab Content" description="Add Title"/>
+			</fieldset>
+			
+			<fieldset name="accordion4" label="Accordion 4">		
+				<field name="sl_text7" type="text" label="Tab Title" description="Add Title"/>
+				<field name="sl_text8" type="text" label="Tab Content" description="Add Title"/>
+			</fieldset>
+			
+			<fieldset name="accordion5" label="Accordion 5">		
+				<field name="sl_text9" type="text" label="Tab Title" description="Add Title"/>
+				<field name="sl_text10" type="text" label="Tab Content" description="Add Title"/>
+			</fieldset>
+			
+			<fieldset name="accordion6" label="Accordion 6">		
+				<field name="sl_text11" type="text" label="Tab Title" description="Add Title"/>
+				<field name="sl_text12" type="text" label="Tab Content" description="Add Title"/>
+			</fieldset>
+	
+		</fields>
+	</config>
+</extension>

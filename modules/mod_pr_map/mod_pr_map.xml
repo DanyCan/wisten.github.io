@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" method="upgrade">
+	<name>PR Map</name>
+	<creationDate>31/12/2014</creationDate>
+	<author>Mehir Mondal</author>
+	<authorEmail>mehir.mondal@gmail.com</authorEmail>
+	<authorUrl>http://www.webpentagon.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>0.1</version>
+	<description>PR Map Module for joomla 3.2.X</description>
+	<files>
+		<filename module="mod_pr_map">mod_pr_map.php</filename>
+		<filename>mod_pr_map.xml</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_pr_map.ini</language>
+		<language tag="en-GB">language/en-GB.mod_pr_map.sys.ini</language>
+	</languages>
+		<config>
+		
+		<fields name="params">
+		
+			<!--
+			<fieldset name="headline" label="Section Header">		
+				<field name="heading" type="text" label="Section Title" description="Add Section Title"/>
+			</fieldset>
+			
+			
+			<fieldset name="map_types" label="Map Type">
+				<field name="map_type" type="list" label="Select Type" default="ROADMAP">
+					<option value="ROADMAP">ROADMAP</option>
+					<option value="SATELLITE">SATELLITE</option>
+				</field>
+			</fieldset>-->
+			
+			<fieldset name="content1" label="Office 1">	
+				<field name="map_lat1" type="text" label="Latitude" description="Add Latitude"/>
+				<field name="map_lng1" type="text" label="Longitude" description="Add Longitude"/>
+				<field name="sl_text1" type="text" label="Greetings" description="Add Greetings"/>
+				<field name="sl_text2" type="text" label="Address" description="Add Address"/>
+				<field name="sl_text3" type="text" label="Description" description="Add Description"/>
+			</fieldset>
+			
+			<fieldset name="content2" label="Office 2">		
+				<field name="map_lat2" type="text" label="Latitude" description="Add Latitude"/>
+				<field name="map_lng2" type="text" label="Longitude" description="Add Longitude"/>
+				<field name="sl_text4" type="text" label="Greetings" description="Add Greetings"/>
+				<field name="sl_text5" type="text" label="Address" description="Add Address"/>
+				<field name="sl_text6" type="text" label="Description" description="Add Description"/>
+			</fieldset>
+			
+	
+		</fields>
+	</config>
+</extension>

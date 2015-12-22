@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" method="upgrade">
+	<name>PR Contentshow</name>
+	<creationDate>20/02/2014</creationDate>
+	<author>Kamrul Hossain Rono</author>
+	<authorEmail>webpentagon@pranon.com</authorEmail>
+	<authorUrl>http://www.webpentagon.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>0.1</version>
+	<description>PR Contentshow Module for joomla 3.2.X</description>
+	<files>
+		<filename module="mod_pr_contentshow">mod_pr_contentshow.php</filename>
+		<filename>mod_pr_contentshow.xml</filename>
+		<filename>index.html</filename>
+		<filename>common.php</filename>
+		<filename>helper.php</filename>
+		<filename>k2helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>elements</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_pr_contentshow.ini</language>
+	</languages>
+		<config>
+		
+		<fields name="params" addfieldpath="/modules/mod_pr_contentshow/elements">
+		
+		  		<fieldset name="DATASOURCE" label="Content">
+				<field name="title" type="text" label="Title" description="CONTENT Title"></field>
+				<field name="desc" type="text" label="Description" description="CONTENT Description"></field>
+				
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="MODULE_CLASS_SUFFIX_DESCRIPTION"/>
+				<field name="icon" type="editor" width="200" height="auto" filter="safehtml" label="Icon For Service" description="Add Section Description"/>
+				
+				<field name="content_type" type="list" default="service" label="Content Style" description="CONTENT_STYLE_DESC">
+				  <option value="service">Service</option>
+				  <option value="blog">Blog</option>
+				</field>
+				
+				
+				<field name="content_source" type="list" default="joomla" label="Content Source" description="CONTENT_SOURCE_DESC">
+				  <option value="joomla">JOOMLA</option>
+				  <option value="k2">K2 Categories</option>
+				</field>
+				
+				<field name="catids" type="category" extension="com_content" multiple="true" size="10" default="" label="Joomla Categories" description="CATEGORY_DESC" />						
+				<field name="k2catids" type="k2category" default="all" label="K2 Categories" description="K2CATEGORY_DESC"/>
+
+				<field name="item_count" type="text" default="3" label="Number of articles" description="Column Desc"></field>
+				
+				<field name="article_showtitle" type="radio" default="1" label="Show Title" description="SHOW_TITLE_DESC" class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="article_linkedtitle" type="radio" default="1" label="Linked" description="LINKED_TITLE_DESC" class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="article_title_text_limit" type="radio" default="0" label="Title Text Limit" description="TITLE_TEXT_LIMIT_DESC" class="btn-group">
+					<option value="0">WORDS</option>
+					<option value="1">CHARS</option>
+				</field>
+				<field name="article_count_title_text" type="text" default="2" size="2" />
+				
+				<field name="article_introtext" type="radio" default="1" label="Show Introtext" description="SHOW_INTRO_DESC" class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="article_intro_text_limit" type="radio" default="0" label="Intro Text Limit" description="INTRO_TEXT_LIMIT_DESC" class="btn-group">
+					<option value="0">WORDS</option>
+					<option value="1">CHARS</option>
+				</field>
+				<field name="article_count_intro_text" type="text" default="30" size="2" />	
+				
+				<field name="article_extra_fields" type="radio" default="0" label="Show Extra Fields (For Staff Style)" description="SHOW_EXTRA_FIELDS_DESC" class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				
+					
+					<field type="asset" />	
+										
+					<field name="ordering" type="list" default="a.created" label="Order" description="ORDER_DESC">
+					<option value="a.ordering">Joomla Order</option>
+					<option value="a.publish_up">Published Up</option>
+					<option value="a.hits">Hits</option>
+					<option value="a.title">Title</option>
+					<option value="a.id">ID</option>
+					<option value="a.alias">Alias</option>
+					<option value="a.created">Created</option>
+					<option value="a.modified">Modified</option>
+				</field>
+				<field name="ordering_direction" type="list" default="ASC" label="Ordering Filter" description="ORDERING_FILTER_DESC">
+					<option value="DESC">Filter Descending</option>
+					<option value="ASC">Filter Ascending</option>
+				</field>
+				<field name="user_id" type="list" default="0" label="Authors" description="AUTHORS_DESC">
+					<option value="0">Anyone</option>
+					<option value="by_me">By Me</option>
+					<option value="not_me">Not by Me</option>
+				</field>
+				<field name="show_featured" type="list" default="" label="Featured" description="FEATURED_DESC">
+					<option value="">Show</option>
+					<option value="0">Hide</option>
+					<option value="1">Only show featured</option>
+				</field>	
+										
+			</fieldset>
+				
+			
+
+		</fields>
+	</config>
+</extension>

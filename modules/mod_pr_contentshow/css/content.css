@@ -1,0 +1,30 @@
+
+
+/* Demo Slides */
+
+#owl-example .item{
+	padding: 0px 0px;
+	margin: 0px;
+	color: #000;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	text-align: center;
+}
+#owl-example .item img{
+	width: auto;
+	margin: 0 auto;
+	display: block;
+}
+#owl-example .item h3{
+	font-size: 28px;
+	font-weight: 300;
+	margin: 25px 0 0;
+}
+#owl-example .item h4{
+	margin: 10px 0px;
+	font-size: 18px;
+}
+#owl-example .projectinfo1 {
+height: 74%;
+}
